@@ -10,36 +10,20 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>demo-spring-mvc</module>
+        <module>demo-spring-log</module>
     </modules>
 
     <properties>
         <spring-context.version>4.3.21.RELEASE</spring-context.version>
         <spring-webmvc.version>4.3.21.RELEASE</spring-webmvc.version>
         <junit.version>4.12</junit.version>
-        <log4j-core.version>2.6.2</log4j-core.version>
+        <log4j-core.version>2.8.2</log4j-core.version>
         <log4j-jcl.version>2.6.2</log4j-jcl.version>
         <log4j-slf4j-impl.version>2.6.2</log4j-slf4j-impl.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- slf4j -->
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-slf4j-impl</artifactId>
-                <version>${log4j-slf4j-impl.version}</version>
-            </dependency>
-            <!-- log4j 2.x-->
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-core</artifactId>
-                <version>${log4j-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-jcl</artifactId>
-                <version>${log4j-jcl.version}</version>
-            </dependency>
             <!-- spring -->
             <dependency>
                 <groupId>org.springframework</groupId>

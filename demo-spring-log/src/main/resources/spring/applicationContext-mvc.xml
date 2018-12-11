@@ -9,7 +9,7 @@
 
     <context:property-placeholder location="classpath:config/demo.properties"/>
 
-    <context:component-scan base-package="zwl.demo.springmvc.controller" use-default-filters="false">
+    <context:component-scan base-package="zwl.demo.springlog.controller" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
         <context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.RestControllerAdvice" />
     </context:component-scan>
